@@ -1,0 +1,4 @@
+- insert:
+    - id: usage-meter
+      name: dsh-usage-meter
+      config: {}

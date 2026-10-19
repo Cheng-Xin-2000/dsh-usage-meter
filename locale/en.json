@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Usage & Balance Meter",
+    "description": "Shows DeepSeek balance and OpenCode Go quota windows under the composer, refreshed automatically."
+  }
+}

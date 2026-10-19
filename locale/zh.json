@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "余额与额度",
+    "description": "在输入框下方显示 DeepSeek 余额和 OpenCode Go 三档额度，自动刷新。"
+  }
+}

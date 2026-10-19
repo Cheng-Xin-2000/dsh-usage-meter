@@ -1,0 +1,56 @@
+{
+  "name": "dsh-usage-meter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeepSeek balance and OpenCode Go quota in the composer dock",
+  "license": "MIT",
+  "author": "CyrusShu",
+  "homepage": "https://github.com/Cheng-Xin-2000/dsh-usage-meter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cheng-Xin-2000/dsh-usage-meter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cheng-Xin-2000/dsh-usage-meter/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "deepseek",
+    "opencode",
+    "balance",
+    "quota"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
